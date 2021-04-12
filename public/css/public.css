@@ -1,87 +1,168 @@
-h1{
-    font-family: 'Lato', sans-serif;
-    font-weight: bold 700;
-}
-h3{
+body{
     font-family: 'Lato', sans-serif;
 }
-p{
-    font-family: 'Lato', sans-serif;
-    color: white;
-}
-.nav{
-    position: relative;
-    display: flex;
+
+/*header*/
+header{
     width: 100%;
-    background-color: rgb(44, 62, 80);
+    background-color: #334D5C;
+    display: flex;
+}
+.txtheader1{
     color: white;
-}
-.h1{
-    display: flex;
     width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-.h3{
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txtheader2{
+    color: white;
     width: 30%;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+/*Fin header*/
+
+/*media*/
 @media (max-width:640px){
-    .nav{
+    header{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .h1{
-        justify-content: center;
-        width: 100%;
-    }
-    .h3{
+    .txtheader2{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
+        height: 78px;
     }
-    .titre{
+    .Img{
+        height: 100px;
+        width: 200px;
+    }
+    .divImg{
+        height: 100%;
+    }
+    .divtxtsect3{
         display: flex;
-    }
-    .titre>h1{
-        font-size: 60%;
-        justify-content: center;
-    }
-}
-@media (min-width:641px) and (max-width:1007px){
-    .h3{
         width: 50%;
-        justify-content: space-between;
+        justify-content: center;
+        font-size: 10%;
     }
 }
-.container2{
+
+@media (min-width:641px) and (max-width:1007px){
+    .txtheader2{
+        width: 50%;
+    }
+    .Img{
+        height: 120px;
+        width: 150px;
+    }
+    .divImg{
+        height: 130px;
+        width: 20%;
+    }
+}
+@media (min-width:1008px){
+    .txtheader2{
+        width: 40%;
+    }
+    .img{
+        height: 150px;
+        width: 200px;
+    }
+    .divImg{
+        height: 300px;
+        width: 40%;
+    }
+    .divtxt3>p{
+        font-size: 30px;
+    }
+}
+/*section 1*/
+.section1{
+    background-color: rgb(220, 53, 69);
     display: block;
 }
-.bonhomme{
-    display: flex;
-    background-color: rgb(220, 59, 63);
-    justify-content: center;
-    padding-top: 5%;
-}
-.imgbonhomme{
-    height: 10%;
-    width: 10%;
+.img{
+    height: 100px;
+    width: 120px;
 }
 .titre{
-    display: flex;
-    background:  rgb(220, 59, 63);
-    color: white;
-    justify-content: center;
-    font-size: 50px;
+    display: block;
 }
-.divtxttitre{
+.Avatar{
+    width: 200px;
+    height: 200px;
+}
+.divAvatar{
     display: flex;
-    background:  rgb(220, 59, 63);
-    color: white;
     justify-content: center;
-    font-size: 30px;
+    align-items: center;
+    height: 300px;
+}
+.txtTitre{
+    display: block;
+    text-align: center;
+    height: 200px;
+    color: white;
+}
+.txtTitre>h1{
+    font-size: 35px;
+}
+.txtTitre>p{
+    font-size: 13px;
+}
+/*section 2*/
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titreSect2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.divImg{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.img{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*section 3*/
+.section3{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(220, 53, 69) ;
+    color: white;
+}
+.titresect3{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divTxtsect3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.divtxt3{
+    width: 30%;
+    border: solid black 1px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 3%;
 }
